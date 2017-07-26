@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 // import { Form, Icon, Input, Button, Checkbox } from 'antd';
 // 引入React-Router模块
 import { Link, IndexLink} from 'react-router';
@@ -9,7 +9,7 @@ const FormItem = Form.Item;
 class NormalLoginForm extends React.Component {
     componentDidMount() {
         this.props.router.setRouteLeaveHook(this.props.route, () => {
-            return '确认历来本页面？？？'
+            return '确认离开本页面？？？'
         })
     };
     handleSubmit = (e) => {
