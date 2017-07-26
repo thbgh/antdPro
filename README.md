@@ -2,7 +2,7 @@
 
 ![image](https://raw.githubusercontent.com/thbgh/antdPro/master/public/img/main.jpg)
 
-
+</br></br></br>
 使用方法：</br>
 git clone MyRepository-url </br>
 yarn install </br>
