@@ -1,12 +1,12 @@
-这是我学习antd和react自己做的Demo
+这是我学习antd和react自己做的Demo </br>
 
 ![image](https://raw.githubusercontent.com/thbgh/antdPro/master/public/img/main.jpg)
 
 
-使用方法：
-git clone MyRepository-url
-yarn install
-yarn start
+使用方法：</br>
+git clone MyRepository-url </br>
+yarn install </br>
+yarn start </br>
 
 
 
