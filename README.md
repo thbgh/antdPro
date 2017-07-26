@@ -1,6 +1,4 @@
-
-
-
+这是我学习antd和react自己做的Demo
 
 ![image](https://raw.githubusercontent.com/thbgh/antdPro/master/public/img/main.jpg)
 
