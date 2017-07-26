@@ -2,7 +2,7 @@
 
 
 
-![image](http://github.com/thbgh/antdPro/public/img/main.jpg)
+![image](http://github.com/thbgh/antdPro/raw/master/public/img/main.jpg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
