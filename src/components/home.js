@@ -8,12 +8,19 @@ import  Sselect from './select';
 import  Uupload from './upload';
 import  Ccollapse from './collapse';
 import Ttree from './tree'
+import Mmodal from './modal'
 import { Row, Col } from 'antd';
-import { Menu, Dropdown, Icon, message, Button,Steps, Carousel, Tooltip } from 'antd';
+import { Menu, Dropdown, Icon, message, Button,Steps, Carousel, Tooltip, Progress } from 'antd';
 import { Rate } from 'antd';
 import { Switch } from 'antd';
+import { Anchor } from 'antd';
+import { BackTop } from 'antd';
+const { Link } = Anchor;
 
 const Step = Steps.Step;
+
+
+
 
 
 export default class Home extends Component {
@@ -43,12 +50,27 @@ export default class Home extends Component {
 
         return (
             <div>
+                <BackTop />
+                <Anchor>
+                  <Link href="#components-anchor-demo-basic" title="Basic demo" />
+                  <Link href="#components-anchor-demo-fixed" title="Fixed demo" />
+                  <Link href="#API" title="API">
+                    <Link href="#Anchor-Props" title="Anchor Props" />
+                    <Link href="#Link-Props" title="Link Props" />
+                  </Link>
+                </Anchor>
 
-                <div style={{textAlign:"center"}} className="title">
+              {/* <div>
+                <BackTop />
+                Scroll down to see the bottom-right
+                <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}> gray </strong>
+                button.
+              </div> */}
+                <div style={{textAlign:"center"}} className="title"><a href="#components-anchor-demo-basic" className="anchor">#</a>
                     <h1>Home</h1>
                     <h2>这是我的antd项目</h2>
                 </div><br /><br />
-                <div className="gutter-example">
+                <div className="gutter-example"><a href="#components-anchor-demo-basic" className="anchor">#</a>
                    <Row gutter={16}>
                      <Col className="gutter-row" span={6}>
                        <div className="gutter-box">
@@ -112,7 +134,15 @@ export default class Home extends Component {
                 <Tooltip placement="topLeft" title="Prompt Text" arrowPointAtCenter>
                     <Button>Arrow points to center / 箭头指向中心</Button>
                 </Tooltip>
+                <br /><br />
                 <Ttree/>
+                <br /><br />
+                <Mmodal/>
+                <br /><br />
+                <div>
+                    <Progress type="circle" percent={75} format={percent => `${percent} Days`} />
+                    <Progress type="circle" percent={100} format={() => 'Done'} />
+                </div>
             </div>
         );
     }
