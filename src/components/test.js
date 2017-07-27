@@ -1,3 +1,14 @@
+/**
+ * @Author: THB
+ * @Date:   2017-07-26 10:47:51 AM Wednesday
+ * @Email:  thbwork2016@gmail.com
+ * @Project: antdPro
+ * @Filename: test.js
+ * @Last modified by:   THB
+ * @Last modified time: 2017-07-27 10:57:25 AM Thursday
+ */
+
+
 // 测试 组件之间的通信
 import React from 'react';
 import ToggleButton from './child1'

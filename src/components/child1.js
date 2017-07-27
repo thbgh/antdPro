@@ -1,3 +1,15 @@
+/**
+ * @Author: THB
+ * @Date:   2017-07-26 10:47:51 AM Wednesday
+ * @Email:  thbwork2016@gmail.com
+ * @Project: antdPro
+ * @Filename: child1.js
+ * @Last modified by:   THB
+ * @Last modified time: 2017-07-27 10:37:48 AM Thursday
+ */
+
+
+
 import React from 'react';
 
 

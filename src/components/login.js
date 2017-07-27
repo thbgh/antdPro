@@ -1,3 +1,15 @@
+/**
+ * @Author: THB
+ * @Date:   2017-07-26 10:47:51 AM Wednesday
+ * @Email:  thbwork2016@gmail.com
+ * @Project: antdPro
+ * @Filename: login.js
+ * @Last modified by:   THB
+ * @Last modified time: 2017-07-27 11:29:24 AM Thursday
+ */
+
+
+
 import React from 'react';
 // import { Form, Icon, Input, Button, Checkbox } from 'antd';
 // 引入React-Router模块
@@ -8,8 +20,9 @@ const FormItem = Form.Item;
 
 class NormalLoginForm extends React.Component {
     componentDidMount() {
+        //路由钩子函数
         this.props.router.setRouteLeaveHook(this.props.route, () => {
-            return '确认历来本页面？？？'
+            return '确认离开本页面？？？'
         })
     };
     handleSubmit = (e) => {

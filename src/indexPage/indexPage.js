@@ -1,3 +1,15 @@
+/**
+ * @Author: THB
+ * @Date:   2017-07-26 10:47:51 AM Wednesday
+ * @Email:  thbwork2016@gmail.com
+ * @Project: antdPro
+ * @Filename: indexPage.js
+ * @Last modified by:   THB
+ * @Last modified time: 2017-07-27 11:28:17 AM Thursday
+ */
+
+
+
 import React from 'react';
 // import { render } from 'react-dom';
 import './indexPage.less';
@@ -122,7 +134,7 @@ export default class IndexPage extends React.Component {
 
       getUser = () => {
           this.setState({
-              username: '海波'
+              username: 'THB'
           })
       }
 
@@ -139,22 +151,6 @@ export default class IndexPage extends React.Component {
                     <img src={logo} width="80" id="logo" alt="logo"/>
                 </Link>
           </div>
-
-          {/* <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-            <Menu.Item key="1">
-              <Icon type="user" />
-              <span>nav 1</span>
-            </Menu.Item>
-            <Menu.Item key="2">
-              <Icon type="video-camera" />
-              <span>nav 2</span>
-            </Menu.Item>
-            <Menu.Item key="3">
-              <Icon type="upload" />
-              <span>nav 3</span>
-            </Menu.Item>
-          </Menu> */}
-
 
           <Menu theme="dark" defaultSelectedKeys={['7']} defaultOpenKeys={['sub2']} mode="inline" theme="dark" inlineCollapsed={this.state.collapsed}>
               <Menu.Item key="1">
@@ -207,7 +203,7 @@ export default class IndexPage extends React.Component {
               onClick={this.toggle}
             />
             <Menu mode="horizontal" style={{float:"right", marginTop: 13}}>
-                <SubMenu title={<span><Badge count={1}><Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Badge>{ this.state.username } </span>}>
+                <SubMenu title={<span><Badge count={1}><Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Badge><span style={{marginLeft: 10}}>{ this.state.username }</span> </span>}>
                     <Menu.Item key="setting:1"><IndexLink to="/">退出</IndexLink></Menu.Item>
                 </SubMenu>
             </Menu>
