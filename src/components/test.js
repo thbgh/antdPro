@@ -5,11 +5,11 @@
  * @Project: antdPro
  * @Filename: test.js
  * @Last modified by:   THB
- * @Last modified time: 2017-07-27 10:57:25 AM Thursday
+ * @Last modified time: 2017-07-27 23:37:46 PM Thursday
  */
 
 
-// 测试 组件之间的通信
+// 测试 组件之间的通信  父子 子父
 import React from 'react';
 import ToggleButton from './child1'
 // 父组件

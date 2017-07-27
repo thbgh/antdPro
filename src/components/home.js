@@ -4,7 +4,7 @@
  * @Email:  thbwork2016@gmail.com
  * @Filename: home.js
  * @Last modified by:   THB
- * @Last modified time: 2017-07-27 23:13:59 PM Thursday
+ * @Last modified time: 2017-07-27 23:37:02 PM Thursday
  */
 
 
@@ -57,7 +57,7 @@ export default class Home extends Component {
         const onChangeSwitch = (checked) => {
             console.log(`switch to ${checked}`);
         };
-        
+
         return (
             <div>
                 <BackTop />
