@@ -1,3 +1,14 @@
+/**
+ * @Author: THB
+ * @Date:   2017-07-26 20:50:59 PM Wednesday
+ * @Email:  thbwork2016@gmail.com
+ * @Filename: home.js
+ * @Last modified by:   THB
+ * @Last modified time: 2017-07-27 23:13:59 PM Thursday
+ */
+
+
+
 import React, { Component } from 'react';
 import './home.less'
 import  Complete from './autoComplete';
@@ -46,8 +57,7 @@ export default class Home extends Component {
         const onChangeSwitch = (checked) => {
             console.log(`switch to ${checked}`);
         };
-        // const set ={checkedChildren:{<Icon type="check" />}, unCheckedChildren:{<Icon type="cross" />}, onChange:{onChangeSwitch}};
-
+        
         return (
             <div>
                 <BackTop />
