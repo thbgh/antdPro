@@ -4,7 +4,7 @@
  * @Email:  thbwork2016@gmail.com
  * @Filename: home.js
  * @Last modified by:   THB
- * @Last modified time: 2017-07-27 23:37:02 PM Thursday
+ * @Last modified time: 2017-07-28 17:58:02 PM Friday
  */
 
 
@@ -26,7 +26,7 @@ import { Rate } from 'antd';
 import { Switch } from 'antd';
 import { Anchor } from 'antd';
 import { BackTop } from 'antd';
-const { Link } = Anchor;
+const { Link, AnchorLink } = Anchor;
 
 const Step = Steps.Step;
 
@@ -35,6 +35,19 @@ const Step = Steps.Step;
 
 
 export default class Home extends Component {
+    componentDidMount() {
+
+        const getCookie = (name) => {
+            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+            if(arr=document.cookie.match(reg))
+            // return unescape(arr[2]);
+            alert(unescape(arr[2]))
+            else
+            return null;
+        }
+        getCookie('isLogin')();
+    };
+
     onSelect = (selectedKeys, info) => {
       console.log('selected', selectedKeys, info);
     }
@@ -61,14 +74,23 @@ export default class Home extends Component {
         return (
             <div>
                 <BackTop />
-                <Anchor>
+                {/* <Anchor>
                   <Link href="#components-anchor-demo-basic" title="Basic demo" />
                   <Link href="#components-anchor-demo-fixed" title="Fixed demo" />
                   <Link href="#API" title="API">
                     <Link href="#Anchor-Props" title="Anchor Props" />
                     <Link href="#Link-Props" title="Link Props" />
                   </Link>
+                </Anchor> */}
+
+                <Anchor>
+                  <Link href="#xxx">xxxx</Link>
+                  <Link href="#yyy">yyyy</Link>
                 </Anchor>
+
+
+                <div id="xxx">xxxxxxxxx</div>
+                {/* <div id="yyy">yyyyyyyyy</div> */}
 
               {/* <div>
                 <BackTop />
@@ -131,6 +153,7 @@ export default class Home extends Component {
                   <Switch checkedChildren="1" unCheckedChildren="0" onChange={onChangeSwitch}/>
                   <br />
                 </div>
+                <div id="yyy">yyyyyyyyy</div>
                 <br /><br />
                 <Uupload />
                 <br /><br />

@@ -5,7 +5,7 @@
  * @Project: antdPro
  * @Filename: login.js
  * @Last modified by:   THB
- * @Last modified time: 2017-07-27 16:27:58 PM Thursday
+ * @Last modified time: 2017-07-28 17:44:45 PM Friday
  */
 
 
@@ -14,22 +14,31 @@ import React from 'react';
 // import { Form, Icon, Input, Button, Checkbox } from 'antd';
 // 引入React-Router模块
 import { Link, IndexLink} from 'react-router';
+import { History } from 'react-router';
 import { withRouter } from 'react-router'
-import { Form, Icon, Input, Button } from 'antd';
+import { Form, Icon, Input, Button, message } from 'antd';
 const FormItem = Form.Item;
 
 class NormalLoginForm extends React.Component {
-    componentDidMount() {
-        //路由钩子函数
-        this.props.router.setRouteLeaveHook(this.props.route, () => {
-            return '确认离开本页面？？？'
-        })
-    };
+
+    // componentDidMount() {
+    //     //路由钩子函数
+    //     this.props.router.setRouteLeaveHook(this.props.route, () => {
+    //         return '确认离开本页面？？？'
+    //     })
+    // };
+
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 console.log('Received values of form: ', values);
+                if(values.telephone =="18817956304" && values.password =="111111") {
+                    document.cookie="isLogin=true";
+                    window.location.href='#index';
+                } else {
+                    message.error('账号错误，请联系THB ！');
+                }
                 // YBCommon.YBFetch({
                 //     bodyData: {
                 //         api_name: 'user.user_login',
