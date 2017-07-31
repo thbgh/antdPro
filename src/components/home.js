@@ -4,7 +4,7 @@
  * @Email:  thbwork2016@gmail.com
  * @Filename: home.js
  * @Last modified by:   THB
- * @Last modified time: 2017-07-28 17:58:02 PM Friday
+ * @Last modified time: 2017-07-31 11:56:18 AM Monday
  */
 
 
@@ -18,8 +18,8 @@ import  Datep from './datePicker';
 import  Sselect from './select';
 import  Uupload from './upload';
 import  Ccollapse from './collapse';
-import Ttree from './tree'
-import Mmodal from './modal'
+import  Ttree from './tree'
+import  Mmodal from './modal'
 import { Row, Col } from 'antd';
 import { Menu, Dropdown, Icon, message, Button,Steps, Carousel, Tooltip, Progress } from 'antd';
 import { Rate } from 'antd';
@@ -32,22 +32,7 @@ const Step = Steps.Step;
 
 
 
-
-
 export default class Home extends Component {
-    componentDidMount() {
-
-        const getCookie = (name) => {
-            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-            if(arr=document.cookie.match(reg))
-            // return unescape(arr[2]);
-            alert(unescape(arr[2]))
-            else
-            return null;
-        }
-        getCookie('isLogin')();
-    };
-
     onSelect = (selectedKeys, info) => {
       console.log('selected', selectedKeys, info);
     }

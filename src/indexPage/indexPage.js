@@ -5,7 +5,7 @@
  * @Project: antdPro
  * @Filename: indexPage.js
  * @Last modified by:   THB
- * @Last modified time: 2017-07-28 00:04:39 AM Friday
+ * @Last modified time: 2017-07-31 11:56:26 AM Monday
  */
 
 
@@ -13,6 +13,7 @@
 import React from 'react';
 // import { render } from 'react-dom';
 import './indexPage.less';
+import Common from '../common'
 import registerServiceWorker from './registerServiceWorker';
 // 引入React-Router模块
 import { Link, IndexLink } from 'react-router'
@@ -107,6 +108,10 @@ export default class IndexPage extends React.Component {
   //     collapsed: !this.state.collapsed,
   //   });
   // }
+    componentWillMount() {
+      // 查找指定登录cookie,控制页面进入权限
+      Common.getCookie('isLogin')
+    };
 
     constructor(props) {
         super(props)
@@ -183,7 +188,7 @@ export default class IndexPage extends React.Component {
                 <Menu.Item key="12"><Link to="/index/table" activeStyle={{backgroundColor: 'rgb(66, 218, 41)'}}>表格</Link></Menu.Item> */}
 
                 <Menu.Item key="7"><Link to="/index/home">首页</Link></Menu.Item>
-                <Menu.Item key="8"><Link to="/index/login">登录</Link></Menu.Item>
+                {/* <Menu.Item key="8"><Link to="/index/login">登录</Link></Menu.Item> */}
                 <Menu.Item key="9"><Link to="/index/button">按钮</Link></Menu.Item>
                 <Menu.Item key="10"><Link to="/index/form">表单</Link></Menu.Item>
                 <Menu.Item key="11"><Link to="/index/calender">日历</Link></Menu.Item>

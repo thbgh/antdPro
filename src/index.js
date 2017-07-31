@@ -24,14 +24,13 @@ render((
         <Route path="/index" component={IndexPage}>
             <IndexRoute component={Home}/>
             <Route path="home" component={Home} />
-            <Route path="login" component={Login} />
+            {/* <Route path="login" component={Login} /> */}
             <Route path="form" component={MyForm} />
             <Route path="button" component={Btn} />
             <Route path="calender" component={Ccalender} />
             <Route path="table" component={Ttable} />
             <Route path="tree" component={Ttree} />
             <Route path="test" component={MyContainer} />
-            
         </Route>
     </Router>
 ), document.getElementById('root'));

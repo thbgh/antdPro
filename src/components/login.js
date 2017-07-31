@@ -5,12 +5,13 @@
  * @Project: antdPro
  * @Filename: login.js
  * @Last modified by:   THB
- * @Last modified time: 2017-07-28 17:44:45 PM Friday
+ * @Last modified time: 2017-07-31 11:50:02 AM Monday
  */
 
 
 
 import React from 'react';
+import Common from '../common'
 // import { Form, Icon, Input, Button, Checkbox } from 'antd';
 // 引入React-Router模块
 import { Link, IndexLink} from 'react-router';
@@ -34,7 +35,8 @@ class NormalLoginForm extends React.Component {
             if (!err) {
                 console.log('Received values of form: ', values);
                 if(values.telephone =="18817956304" && values.password =="111111") {
-                    document.cookie="isLogin=true";
+                    // document.cookie="isLogin=true";
+                    Common.setCookie('isLogin','true')
                     window.location.href='#index';
                 } else {
                     message.error('账号错误，请联系THB ！');
