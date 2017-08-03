@@ -3,7 +3,7 @@ import React from 'react';
 import { render } from 'react-dom';
 // import registerServiceWorker from './registerServiceWorker';
 // 引入React-Router模块
-import { Router, Route, hashHistory, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, hashHistory, IndexRoute } from 'react-router';
 // 引入组件
 import Btn from './components/button';
 import MyForm from './components/form';

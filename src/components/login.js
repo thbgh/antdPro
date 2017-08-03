@@ -5,7 +5,7 @@
  * @Project: antdPro
  * @Filename: login.js
  * @Last modified by:   THB
- * @Last modified time: 2017-07-31 11:50:02 AM Monday
+ * @Last modified time: 2017-08-03 15:52:40 PM Thursday
  */
 
 
@@ -22,19 +22,21 @@ const FormItem = Form.Item;
 
 class NormalLoginForm extends React.Component {
 
-    // componentDidMount() {
-    //     //路由钩子函数
-    //     this.props.router.setRouteLeaveHook(this.props.route, () => {
-    //         return '确认离开本页面？？？'
-    //     })
-    // };
+    componentDidMount() {
+        // //路由钩子函数
+        // this.props.router.setRouteLeaveHook(this.props.route, () => {
+        //     return '确认离开本页面？？？'
+        // })
+        // Common.setCookie('isLogin','false')
+        Common.delCookie('isLogin')
+    };
 
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 console.log('Received values of form: ', values);
-                if(values.telephone =="18817956304" && values.password =="111111") {
+                if(values.telephone =="18811111111" && values.password =="111111") {
                     // document.cookie="isLogin=true";
                     Common.setCookie('isLogin','true')
                     window.location.href='#index';
@@ -92,9 +94,6 @@ class NormalLoginForm extends React.Component {
                   )} */}
                   {/* <a className="login-form-forgot" href="">忘记密码</a>
                   <a href="">现在注册!</a> */}
-                    <Button type="default" className="login-form-button" style={{width:'100%'}}>
-                        <Link to="/index">开发进入</Link>
-                    </Button>
                 </FormItem>
             </Form>
         </div>
