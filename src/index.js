@@ -12,6 +12,7 @@ import Home from './components/home';
 import Ccalender from './components/calender';
 import Ttable from './components/table';
 import Ttree from './components/tree';
+import Cchart from './components/echart';
 import MyContainer from './components/test';
 import IndexPage from './indexPage/indexPage';
 
@@ -31,6 +32,7 @@ render((
             <Route path="table" component={Ttable} />
             <Route path="tree" component={Ttree} />
             <Route path="test" component={MyContainer} />
+            <Route path="chart" component={Cchart} />
         </Route>
     </Router>
 ), document.getElementById('root'));

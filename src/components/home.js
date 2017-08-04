@@ -4,7 +4,7 @@
  * @Email:  thbwork2016@gmail.com
  * @Filename: home.js
  * @Last modified by:   THB
- * @Last modified time: 2017-07-31 11:56:18 AM Monday
+ * @Last modified time: 2017-08-04 11:16:05 AM Friday
  */
 
 
@@ -19,6 +19,7 @@ import  Sselect from './select';
 import  Uupload from './upload';
 import  Ccollapse from './collapse';
 import  Ttree from './tree'
+import  MyChart from './echart'
 import  Mmodal from './modal'
 import { Row, Col } from 'antd';
 import { Menu, Dropdown, Icon, message, Button,Steps, Carousel, Tooltip, Progress } from 'antd';
@@ -26,6 +27,7 @@ import { Rate } from 'antd';
 import { Switch } from 'antd';
 import { Anchor } from 'antd';
 import { BackTop } from 'antd';
+
 const { Link, AnchorLink } = Anchor;
 
 const Step = Steps.Step;
@@ -58,6 +60,7 @@ export default class Home extends Component {
 
         return (
             <div>
+
                 <BackTop />
                 {/* <Anchor>
                   <Link href="#components-anchor-demo-basic" title="Basic demo" />
@@ -83,6 +86,7 @@ export default class Home extends Component {
                 <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}> gray </strong>
                 button.
               </div> */}
+
                 <div style={{textAlign:"center"}} className="title"><a href="#components-anchor-demo-basic" className="anchor">#</a>
                     <h1>Home</h1>
                     <h2>这是我的antd项目</h2>
@@ -149,6 +153,7 @@ export default class Home extends Component {
                    <div><h3>3</h3></div>
                    <div><h3>4</h3></div>
                 </Carousel> */}
+
                 <Tooltip placement="topLeft" title="Prompt Text" arrowPointAtCenter>
                     <Button>Arrow points to center / 箭头指向中心</Button>
                 </Tooltip>
@@ -161,6 +166,7 @@ export default class Home extends Component {
                     <Progress type="circle" percent={75} format={percent => `${percent} Days`} />
                     <Progress type="circle" percent={100} format={() => 'Done'} />
                 </div>
+                <MyChart />
             </div>
         );
     }
