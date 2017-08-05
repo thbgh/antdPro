@@ -4,7 +4,7 @@
  * @Email:  thbwork2016@gmail.com
  * @Filename: home.js
  * @Last modified by:   THB
- * @Last modified time: 2017-08-04 11:16:05 AM Friday
+ * @Last modified time: 2017-08-04 17:06:39 PM Friday
  */
 
 
@@ -19,7 +19,6 @@ import  Sselect from './select';
 import  Uupload from './upload';
 import  Ccollapse from './collapse';
 import  Ttree from './tree'
-import  MyChart from './echart'
 import  Mmodal from './modal'
 import { Row, Col } from 'antd';
 import { Menu, Dropdown, Icon, message, Button,Steps, Carousel, Tooltip, Progress } from 'antd';
@@ -166,7 +165,6 @@ export default class Home extends Component {
                     <Progress type="circle" percent={75} format={percent => `${percent} Days`} />
                     <Progress type="circle" percent={100} format={() => 'Done'} />
                 </div>
-                <MyChart />
             </div>
         );
     }
