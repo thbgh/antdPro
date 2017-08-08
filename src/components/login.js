@@ -5,7 +5,7 @@
  * @Project: antdPro
  * @Filename: login.js
  * @Last modified by:   THB
- * @Last modified time: 2017-08-03 15:52:40 PM Thursday
+ * @Last modified time: 2017-08-08 14:20:18 PM Tuesday
  */
 
 
@@ -14,8 +14,7 @@ import React from 'react';
 import Common from '../common'
 // import { Form, Icon, Input, Button, Checkbox } from 'antd';
 // 引入React-Router模块
-import { Link, IndexLink} from 'react-router';
-import { History } from 'react-router';
+import { Link, IndexLink, hashHistory} from 'react-router';
 import { withRouter } from 'react-router'
 import { Form, Icon, Input, Button, message } from 'antd';
 const FormItem = Form.Item;
@@ -33,13 +32,15 @@ class NormalLoginForm extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.form.validateFields((err, values) => {
+        let _this = this
+        _this.props.form.validateFields((err, values) => {
             if (!err) {
                 console.log('Received values of form: ', values);
                 if(values.telephone =="18811111111" && values.password =="111111") {
                     // document.cookie="isLogin=true";
                     Common.setCookie('isLogin','true')
-                    window.location.href='#index';
+                    // window.location.href='#index';  //直接url跳转
+                    hashHistory.push('/index')  //使用路由跳转
                 } else {
                     message.error('账号错误，请联系THB ！');
                 }

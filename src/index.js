@@ -14,7 +14,38 @@ import Ttable from './components/table';
 import Ttree from './components/tree';
 import Cchart from './components/echart';
 import MyContainer from './components/test';
+// import {Btn, MyForm, Login, Home, Ccalender, Ttable, Ttree, Cchart, MyContainer} from './components'
 import IndexPage from './indexPage/indexPage';
+
+
+// const routes = {
+//   path: 'course/:courseId',
+//
+//   getChildRoutes(location, callback) {
+//     require.ensure([], function (require) {
+//       callback(null, [
+//         require('./routes/Announcements'),
+//         require('./routes/Assignments'),
+//         require('./routes/Grades'),
+//       ])
+//     })
+//   },
+//
+//   getIndexRoute(location, callback) {
+//     require.ensure([], function (require) {
+//       callback(null, {
+//         component: require('./components/login')
+//       })
+//     })
+//   },
+//
+//   // getComponents(location, callback) {
+//   //   require.ensure([], function (require) {
+//   //     callback(null, require('./components/Course'))
+//   //   })
+//   // }
+// }
+
 
 
 
