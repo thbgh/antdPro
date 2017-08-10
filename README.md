@@ -1,6 +1,6 @@
 # 这是我学习antd和react自己做的Demo </br></br>
 
-![image](https://raw.github.com/thbgh/antdPro/master/public/img/main.jpg)
+![image](https://raw.githubusercontent.com/thbgh/antdPro/master/public/img/main.png)
 </br></br>
 ## 使用方法：</br>
 git clone https://github.com/thbgh/antdPro.git </br>
