@@ -1,20 +1,14 @@
-# 这是我学习antd和react自己做的Demo </br></br>
+# 这是我学习antd和react自己做的Demo
 
 ![image](https://raw.githubusercontent.com/thbgh/antdPro/master/public/img/main.png)
 </br></br>
-## 使用方法：</br>
-git clone https://github.com/thbgh/antdPro.git </br>
-yarn install </br>
-yarn start </br>
-
+## 技术栈：React + antD + ES6 + React-router + Webpack + Less
+## 使用方法：
+- [git clone https://github.com/thbgh/antdPro.git](#)
+- [yarn install](#)
+- [yarn start](#)
 </br></br></br></br></br></br></br>
 ....................分割线...............................
-
-
-
-
-
-
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 
