@@ -5,7 +5,7 @@
  * @Project: antdPro
  * @Filename: indexPage.js
  * @Last modified by:   THB
- * @Last modified time: 2017-08-03 17:04:57 PM Thursday
+ * @Last modified time: 2017-08-10 14:20:36 PM Thursday
  */
 
 import React from 'react';
@@ -194,7 +194,7 @@ export default class IndexPage extends React.Component {
                                 <Link to="/index/test">测试</Link>
                             </Menu.Item>
                             <Menu.Item key="15">
-                                <Link to="/index/chart">G2图表</Link>
+                                <Link to="/index/chart">图表</Link>
                             </Menu.Item>
 
                         </SubMenu>

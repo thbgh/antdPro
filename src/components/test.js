@@ -5,7 +5,7 @@
  * @Project: antdPro
  * @Filename: test.js
  * @Last modified by:   THB
- * @Last modified time: 2017-07-27 23:37:46 PM Thursday
+ * @Last modified time: 2017-08-10 11:05:46 AM Thursday
  */
 
 
@@ -13,7 +13,7 @@
 import React from 'react';
 import ToggleButton from './child1'
 // 父组件
-var MyContainer = React.createClass({
+var TTest = React.createClass({
   getInitialState: function () {
     return {
       totalChecked: 1,
@@ -77,4 +77,4 @@ var MyContainer = React.createClass({
 //   }
 // });
 
-export default MyContainer;
+export default TTest;
