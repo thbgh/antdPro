@@ -4,11 +4,14 @@
 </br></br>
 ## 技术栈：React + antD + ES6 + React-router + Webpack + Less
 ## 使用方法：
-- [git clone https://github.com/thbgh/antdPro.git](#)
-- [yarn install](#)
-- [yarn start](#)
+#### git clone https://github.com/thbgh/antdPro.git
+#### yarn install
+#### yarn start
+
+
+
 </br></br></br></br></br></br></br>
-....................分割线...............................
+####....................分割线...............................
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 
