@@ -5,7 +5,7 @@
  * @Project: antdPro
  * @Filename: indexPage.js
  * @Last modified by:   THB
- * @Last modified time: 2017-08-11 15:10:47 PM Friday
+ * @Last modified time: 2017-08-12 17:13:16 PM Saturday
  */
 
 import React from 'react';
@@ -149,7 +149,7 @@ export default class IndexPage extends React.Component {
         >
           <div className="logo">
             <Link to="/index">
-              <img src={logo} width="65" id="logo" alt="logo" />
+              <img src={logo} width="65" id="logo" alt="Logo" />
             </Link>
           </div>
 
