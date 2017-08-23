@@ -5,7 +5,7 @@
  * @Project: antdPro
  * @Filename: indexPage.js
  * @Last modified by:   THB
- * @Last modified time: 2017-08-19 17:30:46 PM Saturday
+ * @Last modified time: 2017-08-19 22:28:14 PM Saturday
  */
 
 import React from 'react';
@@ -141,7 +141,8 @@ export default class IndexPage extends React.Component {
       <Layout id="components-layout-demo-custom-trigger">
         <Sider
           style={{
-            minHeight: '100vh'
+            minHeight: '100vh',
+            flex: ' 0 0 100px'
           }}
           trigger={null}
           collapsible
@@ -191,13 +192,13 @@ export default class IndexPage extends React.Component {
               }
             >
               {/* //选中的自定义高亮颜色
-                                <Menu.Item key="7"><Link to="/index/home" activeStyle={{backgroundColor: 'rgb(66, 218, 41)'}}>首页</Link></Menu.Item>
-                                <Menu.Item key="8"><Link to="/index/login" activeStyle={{backgroundColor: 'rgb(66, 218, 41)'}}>登录</Link></Menu.Item>
-                                <Menu.Item key="9"><Link to="/index/button" activeStyle={{backgroundColor: 'rgb(66, 218, 41)'}}>按钮</Link></Menu.Item>
-                                <Menu.Item key="10"><Link to="/index/form" activeStyle={{backgroundColor: 'rgb(66, 218, 41)'}}>表单</Link></Menu.Item>
-                                <Menu.Item key="11"><Link to="/index/calender" activeStyle={{backgroundColor: 'rgb(66, 218, 41)'}}>日历</Link></Menu.Item>
-                                <Menu.Item key="12"><Link to="/index/table" activeStyle={{backgroundColor: 'rgb(66, 218, 41)'}}>表格</Link></Menu.Item>
-                            */}
+                    <Menu.Item key="7"><Link to="/index/home" activeStyle={{backgroundColor: 'rgb(66, 218, 41)'}}>首页</Link></Menu.Item>
+                    <Menu.Item key="8"><Link to="/index/login" activeStyle={{backgroundColor: 'rgb(66, 218, 41)'}}>登录</Link></Menu.Item>
+                    <Menu.Item key="9"><Link to="/index/button" activeStyle={{backgroundColor: 'rgb(66, 218, 41)'}}>按钮</Link></Menu.Item>
+                    <Menu.Item key="10"><Link to="/index/form" activeStyle={{backgroundColor: 'rgb(66, 218, 41)'}}>表单</Link></Menu.Item>
+                    <Menu.Item key="11"><Link to="/index/calender" activeStyle={{backgroundColor: 'rgb(66, 218, 41)'}}>日历</Link></Menu.Item>
+                    <Menu.Item key="12"><Link to="/index/table" activeStyle={{backgroundColor: 'rgb(66, 218, 41)'}}>表格</Link></Menu.Item>
+                */}
 
               <Menu.Item key="7">
                 <Link to="/index/home">首页</Link>

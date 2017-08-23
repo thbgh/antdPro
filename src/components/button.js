@@ -6,6 +6,7 @@ import $ from 'jquery';
 
 export default class Btn extends Component {
   componentDidMount() {
+    console.log('data');
     /**
          * 请求1 get 请求
          */
@@ -13,12 +14,12 @@ export default class Btn extends Component {
       data,
       status
     ) {
-      console.log(data);
+      console.dir('请求来的mock1的数据是' + data);
       // console.log(data.list)
-      // //方式一：使用eval解析
-      // var obj = eval(data)
-      // // console.dir(obj.constructor)
-      // console.dir(obj)
+      //方式一：使用eval解析
+      var obj = JSON.parse(data); //由JSON字符串转换为JSON对象
+      console.dir(obj);
+      console.dir(obj.list[0].address);
     });
 
     // fetch('https://1.json', {
