@@ -5,7 +5,7 @@
  * @Project: antdPro
  * @Filename: login.js
  * @Last modified by:   THB
- * @Last modified time: 2017-08-12 16:54:56 PM Saturday
+ * @Last modified time: 2017-08-24 20:01:33 PM Thursday
  */
 
 import React from 'react';
@@ -63,10 +63,7 @@ class NormalLoginForm extends React.Component {
         <Form
           onSubmit={this.handleSubmit}
           className="login-form"
-          style={{
-            maxWidth: '300px',
-            margin: '10% auto'
-          }}
+          style={{ maxWidth: '300px', margin: '0 auto', paddingTop: '10%' }}
         >
           <h1 style={{ textAlign: 'center', marginBottom: '30px' }}>
             ANT DESIGN
