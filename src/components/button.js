@@ -15,11 +15,15 @@ export default class Btn extends Component {
       status
     ) {
       console.dir('请求来的mock1的数据是' + data);
-      // console.log(data.list)
-      //方式一：使用eval解析
+
+      //方式一：使用JSON.parse解析
       var obj = JSON.parse(data); //由JSON字符串转换为JSON对象
       console.dir(obj);
       console.dir(obj.list[0].address);
+
+      //   //方式ER：使用eval解析
+      //   var json = eval('(' + data + ')');
+      //   console.dir(json);
     });
 
     // fetch('https://1.json', {

@@ -23,7 +23,7 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router';
 
 // 判断开发环境 还是 生产环境。
 // 用于在发布后不显示console.log/warn调试信息
-if (window.location.hostname == 'localhost') {
+if (window.location.hostname !== 'localhost') {
   console.log = () => {};
   console.warn = () => {};
 }
