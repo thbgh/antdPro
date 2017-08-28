@@ -144,8 +144,8 @@ render(
       <Route path="tree" getComponent={Ttree} />
       <Route path="test" getComponent={TTest} />
       <Route path="chart" getComponent={Cchart} />
-      <Route path="*" getComponent={NoMatch} />
     </Route>
+    <Route path="/*" getComponent={NoMatch} />
 
     {/* <Route path="/" getComponent={Login}/>
         <Route path="/index" getComponent={IndexPage}>

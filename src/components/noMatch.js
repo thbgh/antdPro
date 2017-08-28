@@ -1,17 +1,31 @@
 import React, { Component } from 'react';
 import { Button } from 'antd';
-// process.env.NODE_ENV=='mock' && require('../mock/mock1.js');
-import '../mock/mock1';
-import $ from 'jquery';
-
+import { Link, IndexLink, hashHistory } from 'react-router';
 export default class Btn extends Component {
   componentDidMount() {}
 
+  goBack = () => {
+    // alert("返回")
+    hashHistory.push('/index');
+  };
+
   render() {
     return (
-      <div style={{ padding: 10 }}>
-        <h1>404</h1>
-        <h3>你想看的页面已经逃离地球！</h3>
+      <div>
+        {/* <div style={{
+                    paddingTop: 100,
+                    margin: "0 auto",
+                    width: 200,
+                    textAlign: 'center'
+                }}> */}
+        <div className="noMatch">
+          <h1 style={{ color: 'red' }}>404</h1>
+          <h5>你想看的页面已经逃离地球</h5>
+          <button onClick={this.goBack}>返回主页</button>
+          <p>
+            <Link to="/index">返回主页</Link>
+          </p>
+        </div>
       </div>
     );
   }

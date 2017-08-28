@@ -143,14 +143,14 @@ ansi-styles@^3.0.0, ansi-styles@^3.1.0:
   dependencies:
     color-convert "^1.0.0"
 
-antd@^2.12.1:
-  version "2.12.1"
-  resolved "http://registry.npm.taobao.org/antd/download/antd-2.12.1.tgz#e4240d2a42fdbd12a55a85c0ff9cbbc0e7b94cfa"
+antd@^2.12.8:
+  version "2.12.8"
+  resolved "http://registry.npm.taobao.org/antd/download/antd-2.12.8.tgz#7efd1c7d2b0c452b7c40de57453ca506fb26dafa"
   dependencies:
     array-tree-filter "~1.0.0"
     babel-runtime "6.x"
     classnames "~2.2.0"
-    create-react-class "^15.5.3"
+    create-react-class "^15.6.0"
     css-animation "^1.2.5"
     dom-closest "^0.2.0"
     lodash.debounce "^4.0.8"
@@ -158,31 +158,31 @@ antd@^2.12.1:
     omit.js "^1.0.0"
     prop-types "^15.5.7"
     rc-animate "^2.3.6"
-    rc-calendar "~8.4.1"
+    rc-calendar "~9.0.0"
     rc-cascader "~0.11.3"
     rc-checkbox "~2.0.3"
     rc-collapse "~1.7.5"
     rc-dialog "~6.5.10"
-    rc-dropdown "~1.4.11"
+    rc-dropdown "~1.5.0"
     rc-editor-mention "~0.6.12"
     rc-form "~1.4.0"
     rc-input-number "~3.6.0"
     rc-menu "~5.0.10"
     rc-notification "~2.0.0"
-    rc-pagination "~1.10.0"
-    rc-progress "~2.1.2"
+    rc-pagination "~1.11.0"
+    rc-progress "~2.2.2"
     rc-rate "~2.1.1"
     rc-select "~6.8.6"
     rc-slider "~8.2.0"
     rc-steps "~2.5.1"
     rc-switch "~1.5.1"
-    rc-table "~5.4.0"
-    rc-tabs "~8.0.0"
+    rc-table "~5.6.1"
+    rc-tabs "~9.1.2"
     rc-time-picker "~2.4.1"
     rc-tooltip "~3.4.6"
-    rc-tree "~1.5.0"
+    rc-tree "~1.7.0"
     rc-tree-select "~1.10.2"
-    rc-upload "~2.3.7"
+    rc-upload "~2.4.0"
     rc-util "^4.0.4"
     react-lazy-load "^3.0.10"
     react-slick "~0.14.2"
@@ -5579,9 +5579,9 @@ rc-animate@2.x, rc-animate@^2.0.2, rc-animate@^2.3.0, rc-animate@^2.3.6:
     css-animation "1.x"
     prop-types "15.x"
 
-rc-calendar@~8.4.1:
-  version "8.4.6"
-  resolved "http://registry.npm.taobao.org/rc-calendar/download/rc-calendar-8.4.6.tgz#55dc45fcc8f91bf6f5bb5632c48b3a48e456f4e5"
+rc-calendar@~9.0.0:
+  version "9.0.1"
+  resolved "http://registry.npm.taobao.org/rc-calendar/download/rc-calendar-9.0.1.tgz#a259e70ea2ceaffeafd96f9c6b2462daabeeea92"
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
@@ -5629,9 +5629,9 @@ rc-dialog@~6.5.10:
     rc-animate "2.x"
     rc-util "^4.0.4"
 
-rc-dropdown@~1.4.11:
-  version "1.4.12"
-  resolved "http://registry.npm.taobao.org/rc-dropdown/download/rc-dropdown-1.4.12.tgz#02dea9f73fa579300586b869130aa2bf955ee733"
+rc-dropdown@~1.5.0:
+  version "1.5.0"
+  resolved "http://registry.npm.taobao.org/rc-dropdown/download/rc-dropdown-1.5.0.tgz#2648ea78b4d56646ef306978873d3fa8993b8c48"
   dependencies:
     prop-types "^15.5.8"
     rc-trigger "1.x"
@@ -5710,18 +5710,18 @@ rc-notification@~2.0.0:
     rc-animate "2.x"
     rc-util "^4.0.4"
 
-rc-pagination@~1.10.0:
-  version "1.10.0"
-  resolved "http://registry.npm.taobao.org/rc-pagination/download/rc-pagination-1.10.0.tgz#24697b65755a1c2d87553ed4b2daeec994490232"
+rc-pagination@~1.11.0:
+  version "1.11.0"
+  resolved "http://registry.npm.taobao.org/rc-pagination/download/rc-pagination-1.11.0.tgz#b30d0f068e29ef009ac64de654d68654659e1b3e"
   dependencies:
-    babel-runtime "^6.23.0"
+    babel-runtime "6.x"
     prop-types "^15.5.7"
 
-rc-progress@~2.1.2:
-  version "2.1.2"
-  resolved "http://registry.npm.taobao.org/rc-progress/download/rc-progress-2.1.2.tgz#d31ccb1499ae223c0d21d1485650aa4a0d374ce0"
+rc-progress@~2.2.2:
+  version "2.2.2"
+  resolved "http://registry.npm.taobao.org/rc-progress/download/rc-progress-2.2.2.tgz#179f322218c533be27be5ddf4ef6f20e1e228769"
   dependencies:
-    babel-runtime "^6.23.0"
+    babel-runtime "6.x"
     prop-types "^15.5.8"
 
 rc-rate@~2.1.1:
@@ -5775,11 +5775,11 @@ rc-switch@~1.5.1:
     classnames "^2.2.1"
     prop-types "^15.5.6"
 
-rc-table@~5.4.0:
-  version "5.4.1"
-  resolved "http://registry.npm.taobao.org/rc-table/download/rc-table-5.4.1.tgz#64758095c24d481f1e18b3b37ed35cad5ce11ddc"
+rc-table@~5.6.1:
+  version "5.6.1"
+  resolved "http://registry.npm.taobao.org/rc-table/download/rc-table-5.6.1.tgz#ff5d5ff1b8b86678d68fa90c8e4b5aa43a3eadb6"
   dependencies:
-    babel-runtime "^6.23.0"
+    babel-runtime "6.x"
     component-classes "^1.2.6"
     lodash.get "^4.4.2"
     prop-types "^15.5.8"
@@ -5787,15 +5787,17 @@ rc-table@~5.4.0:
     shallowequal "^0.2.2"
     warning "^3.0.0"
 
-rc-tabs@~8.0.0:
-  version "8.0.2"
-  resolved "http://registry.npm.taobao.org/rc-tabs/download/rc-tabs-8.0.2.tgz#05fa4b57252df33851e5c250a08bcc6f8e55ceb4"
+rc-tabs@~9.1.2:
+  version "9.1.4"
+  resolved "http://registry.npm.taobao.org/rc-tabs/download/rc-tabs-9.1.4.tgz#ff27a644ade9d0e5a8c8f5a561ee364a6af8c5a3"
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
     create-react-class "15.x"
+    lodash.debounce "^4.0.8"
     prop-types "15.x"
     rc-hammerjs "~0.6.0"
+    rc-util "^4.0.4"
     warning "^3.0.0"
 
 rc-time-picker@~2.4.1:
@@ -5835,7 +5837,7 @@ rc-tree-select@~1.10.2:
     rc-trigger "1.x"
     rc-util "^4.0.2"
 
-rc-tree@^1.3.0, rc-tree@~1.5.0:
+rc-tree@^1.3.0:
   version "1.5.0"
   resolved "http://registry.npm.taobao.org/rc-tree/download/rc-tree-1.5.0.tgz#6b700303c4f160ad7f6c438a8fdca57de96a5dd1"
   dependencies:
@@ -5844,6 +5846,17 @@ rc-tree@^1.3.0, rc-tree@~1.5.0:
     prop-types "^15.5.8"
     rc-animate "2.x"
     rc-util "^4.0.2"
+
+rc-tree@~1.7.0:
+  version "1.7.3"
+  resolved "http://registry.npm.taobao.org/rc-tree/download/rc-tree-1.7.3.tgz#e814e35283e632e52abcd96c78bdefc27b15a997"
+  dependencies:
+    babel-runtime "^6.23.0"
+    classnames "2.x"
+    prop-types "^15.5.8"
+    rc-animate "2.x"
+    rc-util "^4.0.4"
+    warning "^3.0.0"
 
 rc-trigger@1.x:
   version "1.11.2"
@@ -5856,9 +5869,9 @@ rc-trigger@1.x:
     rc-animate "2.x"
     rc-util "4.x"
 
-rc-upload@~2.3.7:
-  version "2.3.8"
-  resolved "http://registry.npm.taobao.org/rc-upload/download/rc-upload-2.3.8.tgz#eaf35913cfc2dced196dd9421df253f509a38e21"
+rc-upload@~2.4.0:
+  version "2.4.0"
+  resolved "http://registry.npm.taobao.org/rc-upload/download/rc-upload-2.4.0.tgz#a664ff9c7df2525090441cfa01d93e7f39bfc3ad"
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
