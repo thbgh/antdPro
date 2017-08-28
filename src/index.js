@@ -4,6 +4,8 @@ import { render } from 'react-dom';
 // import {registerServiceWorker} from './registerServiceWorker';
 // 引入React-Router模块
 import { Router, Route, hashHistory, IndexRoute } from 'react-router';
+
+import './common.less';
 // // 引入组件
 // import Btn from './components/button';
 // import MyForm from './components/form';
@@ -118,6 +120,15 @@ const TTest = (location, cb) => {
     'TTest'
   );
 };
+const NoMatch = (location, cb) => {
+  require.ensure(
+    [],
+    require => {
+      cb(null, require('./components/noMatch').default);
+    },
+    'NoMatch'
+  );
+};
 
 // 配置路由
 render(
@@ -133,6 +144,7 @@ render(
       <Route path="tree" getComponent={Ttree} />
       <Route path="test" getComponent={TTest} />
       <Route path="chart" getComponent={Cchart} />
+      <Route path="*" getComponent={NoMatch} />
     </Route>
 
     {/* <Route path="/" getComponent={Login}/>
