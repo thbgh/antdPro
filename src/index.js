@@ -27,6 +27,7 @@ import './common.less';
 // 用于在发布后不显示console.log/warn调试信息
 if (window.location.hostname !== 'localhost') {
   console.log = () => {};
+  console.dir = () => {};
   console.warn = () => {};
 }
 
@@ -120,6 +121,15 @@ const TTest = (location, cb) => {
     'TTest'
   );
 };
+const MultiR = (location, cb) => {
+  require.ensure(
+    [],
+    require => {
+      cb(null, require('./components/multiRouters').default);
+    },
+    'MultiR'
+  );
+};
 const NoMatch = (location, cb) => {
   require.ensure(
     [],
@@ -144,8 +154,14 @@ render(
       <Route path="tree" getComponent={Ttree} />
       <Route path="test" getComponent={TTest} />
       <Route path="chart" getComponent={Cchart} />
+      <Route path="multiRouters" getComponent={MultiR}>
+        <IndexRoute getComponent={Btn} />
+        <Route path="button" getComponent={Btn} />
+        <Route path="form" getComponent={MyForm} />
+        <Route path="table" getComponent={Ttable} />
+      </Route>
     </Route>
-    <Route path="/*" getComponent={NoMatch} />
+    <Route path="*" getComponent={NoMatch} />
 
     {/* <Route path="/" getComponent={Login}/>
         <Route path="/index" getComponent={IndexPage}>

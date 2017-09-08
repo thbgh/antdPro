@@ -5,7 +5,7 @@
  * @Project: antdPro
  * @Filename: indexPage.js
  * @Last modified by:   THB
- * @Last modified time: 2017-08-19 22:28:14 PM Saturday
+ * @Last modified time: 2017-09-04 14:06:49 PM Monday
  */
 
 import React from 'react';
@@ -224,6 +224,9 @@ export default class IndexPage extends React.Component {
               </Menu.Item>
               <Menu.Item key="15">
                 <Link to="/index/chart">图表</Link>
+              </Menu.Item>
+              <Menu.Item key="16">
+                <Link to="/index/multiRouters">多routers</Link>
               </Menu.Item>
             </SubMenu>
           </Menu>

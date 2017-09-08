@@ -4,7 +4,7 @@
  * @Email:  thbwork2016@gmail.com
  * @Filename: home.js
  * @Last modified by:   THB
- * @Last modified time: 2017-08-28 13:44:46 PM Monday
+ * @Last modified time: 2017-09-04 14:36:30 PM Monday
  */
 
 import React, { Component } from 'react';
@@ -107,9 +107,6 @@ export default class Home extends Component {
         <br />
         <br />
         <div className="gutter-example">
-          <a href="#components-anchor-demo-basic" className="anchor">
-            #
-          </a>
           <Row gutter={16}>
             <Col className="gutter-row" span={6}>
               <div className="gutter-box">

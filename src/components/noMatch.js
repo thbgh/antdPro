@@ -4,11 +4,6 @@ import { Link, IndexLink, hashHistory } from 'react-router';
 export default class Btn extends Component {
   componentDidMount() {}
 
-  goBack = () => {
-    // alert("返回")
-    hashHistory.push('/index');
-  };
-
   render() {
     return (
       <div>
@@ -21,10 +16,16 @@ export default class Btn extends Component {
         <div className="noMatch">
           <h1 style={{ color: 'red' }}>404</h1>
           <h5>你想看的页面已经逃离地球</h5>
-          <button onClick={this.goBack}>返回主页</button>
-          <p>
+          <button
+            onClick={() => {
+              hashHistory.push('/index');
+            }}
+          >
+            返回主页
+          </button>
+          {/* <p>
             <Link to="/index">返回主页</Link>
-          </p>
+          </p> */}
         </div>
       </div>
     );

@@ -3,6 +3,8 @@ import { Button } from 'antd';
 // process.env.NODE_ENV=='mock' && require('../mock/mock1.js');
 import '../mock/mock1';
 import $ from 'jquery';
+// 引入React-Router模块
+import { Link, IndexLink } from 'react-router';
 
 export default class Btn extends Component {
   componentDidMount() {
