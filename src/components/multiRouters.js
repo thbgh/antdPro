@@ -11,17 +11,17 @@ export default class Btn extends Component {
         <h1>多路由页面展示</h1>
         <Row gutter={16}>
           <Col className="gutter-row" span={4}>
-            <div className="gutter-box">
-              <h3>
-                <Link to="/index/multiRouters/button">Button按钮</Link>
-              </h3>
-              <h3>
-                <Link to="/index/multiRouters/form">Form表单</Link>
-              </h3>
-              <h3>
-                <Link to="/index/multiRouters/table">Table表格</Link>
-              </h3>
-            </div>
+            {/* <div className="gutter-box"> */}
+            <h3>
+              <Link to="/index/multiRouters/button">Button按钮</Link>
+            </h3>
+            <h3>
+              <Link to="/index/multiRouters/form">Form表单</Link>
+            </h3>
+            <h3>
+              <Link to="/index/multiRouters/table">Table表格</Link>
+            </h3>
+            {/* </div> */}
           </Col>
           <Col className="gutter-row" span={20}>
             <div>
